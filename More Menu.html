@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel | Menu</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            color: #222;
+        }
+
+        header {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 28px 15px;
+        }
+
+        header h1 {
+            margin: 0 0 8px;
+            font-size: 32px;
+        }
+
+        header p {
+            margin: 0;
+            color: #ddd;
+        }
+
+        .menu {
+            width: 90%;
+            max-width: 800px;
+            margin: 30px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.10);
+        }
+
+        .menu h2 {
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        .item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 14px 12px;
+            margin: 8px 0;
+            border: 1px solid #e5e5e5;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .item:hover {
+            background: #fafafa;
+            transform: translateX(3px);
+        }
+
+        .item input {
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+        }
+
+        .item span {
+            font-size: 16px;
+        }
+
+        .bottom {
+            text-align: center;
+            margin-top: 25px;
+        }
+
+        button {
+            border: none;
+            padding: 12px 22px;
+            border-radius: 8px;
+            background: #222;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #444;
+        }
+
+        #count {
+            margin-top: 12px;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #777;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>The Ritz-Carlton</h1>
+        <p>Restaurant Menu</p>
+    </header>
+
+    <main class="menu">
+        <h2>Menu Section</h2>
+
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Grilled Chicken Steak</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Creamy Mushroom Pasta</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Margherita Pizza</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Caesar Salad</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Alfredo Pasta</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Vegetable Lasagna</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Grilled Fish</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Garlic Bread</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Chocolate Mousse</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Fresh Lime Soda</span></label>
+
+        <div class="bottom">
+           <a href="Dine And Donate Website.html"> <button>Select and Back</button></a>
+         
+        </div>
+    </main>
+
+    <footer>
+        © 2026 The Ritz-Carlton Restaurant
+    </footer>
+
+
+
+
+
+
+
+
+
+
+ <header>
+        <h1>Four Season</h1>
+        <p>Restaurant Menu</p>
+    </header>
+
+    <main class="menu">
+        <h2>Menu Section</h2>
+
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Shahi Paneer</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Dal Makhani</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Kadai Paneer</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Chole Bhature</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Aloo Gobi</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Palak Paneer</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Jeera Rice</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Butter Naan</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Gulab Jamun</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Mango Lassi</span></label>
+
+        <div class="bottom">
+           <a href="Dine And Donate Website.html"> <button>Select and Back</button></a>
+         
+        </div>
+    </main>
+
+    <footer>
+        © 2026 Four Season Restaurant
+    </footer>
+
+
+
+
+
+
+<header>
+        <h1>St.Regis</h1>
+        <p>Restaurant Menu</p>
+    </header>
+
+    <main class="menu">
+        <h2>Menu Section</h2>
+
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Murgh Malai Tikka</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Mutton Rogan Josh</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Dal Bukhara</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Paneer Lababdar</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Dum Biryani</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Malai Kofta</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Garlic Naan</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Chicken Seekh Kebab</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Shahi Tukda</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Kesar Lassi</span></label>
+
+        <div class="bottom">
+           <a href="Dine And Donate Website.html"> <button>Select and Back</button></a>
+         
+        </div>
+    </main>
+
+    <footer>
+        © 2026 St.Regis Restaurant
+    </footer>
+
+
+
+
+
+
+
+<header>
+        <h1>The Plaza</h1>
+        <p>Restaurant Menu</p>
+    </header>
+
+    <main class="menu">
+        <h2>Menu Section</h2>
+
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Grilled Vegetable Sandwich</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Chicken Steak</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Penne Arrabbiata</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Four Cheese Pizza</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Greek Salad</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Cream of Mushroom Soup</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Fish and Chips</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Vegetable Risotto</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Brownie with Ice Cream</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Cold Coffee</span></label>
+
+        <div class="bottom">
+           <a href="Dine And Donate Website.html"> <button>Select and Back</button></a>
+         
+        </div>
+    </main>
+
+    <footer>
+        © 2026 The Plaza Restaurant
+    </footer>
+
+
+
+
+
+
+
+<header>
+        <h1>Mandarin Oriental</h1>
+        <p>Restaurant Menu</p>
+    </header>
+
+    <main class="menu">
+        <h2>Menu Section</h2>
+
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Veg Hakka Noodles</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Chicken Manchurian</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Vegetable Spring Rolls</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Schezwan Fried Rice</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Honey Chilli Potato</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Chilli Paneer</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Hot and Sour Soup</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Dim Sum</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Thai Green Curry</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Jasmine Tea</span></label>
+
+        <div class="bottom">
+           <a href="Dine And Donate Website.html"> <button>Select and Back</button></a>
+         
+        </div>
+    </main>
+
+    <footer>
+        © 2026 Mandarin Oriental Restaurant
+    </footer>
+
+
+
+
+
+
+
+<header>
+        <h1>Walrof Astoria</h1>
+        <p>Restaurant Menu</p>
+    </header>
+
+    <main class="menu">
+        <h2>Menu Section</h2>
+
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Lobster Thermidor</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Grilled Salmon</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Truffle Pasta</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Chicken Wellington</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Caesar Salad</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Mushroom Risotto</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Herb Roasted Chicken</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Prawn Cocktail</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Chocolate Fondant</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>New York Cheesecake</span></label>
+
+        <div class="bottom">
+           <a href="Dine And Donate Website.html"> <button>Select and Back</button></a>
+         
+        </div>
+    </main>
+
+    <footer>
+        © 2026 Waldrof Astoria Restaurant
+    </footer>
+
+
+
+
+
+
+
+<header>
+        <h1>Sai Sagar</h1>
+        <p>Restaurant Menu</p>
+    </header>
+
+    <main class="menu">
+        <h2>Menu Section</h2>
+
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Masala Dosa</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Mysore Masala Dosa</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Idli Sambar</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Medu Vada</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Uttapam</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Upma</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Pongal</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Lemon Rice</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Filter Coffee</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Kesari Bath</span></label>
+
+        <div class="bottom">
+           <a href="Dine And Donate Website.html"> <button>Select and Back</button></a>
+         
+        </div>
+    </main>
+
+    <footer>
+        © 2026 Sai Sagar Restaurant
+    </footer>
+
+
+
+
+
+
+
+<header>
+        <h1>The Taj Hotel</h1>
+        <p>Restaurant Menu</p>
+    </header>
+
+    <main class="menu">
+        <h2>Menu Section</h2>
+
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Chicken Biryani</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Mutton Biryani</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Paneer Tikka</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Dal Tadka</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Butter Chicken</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Kadai Chicken</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Shahi Paneer</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Tandoori Chicken</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Gulab Jamun</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Kulfi</span></label>
+
+        <div class="bottom">
+           <a href="Dine And Donate Website.html"> <button>Select and Back</button></a>
+         
+        </div>
+    </main>
+
+    <footer>
+        © 2026 the Taj Hotel Restaurant
+    </footer>
+
+
+
+
+
+
+
+<header>
+        <h1>The Peninsula</h1>
+        <p>Restaurant Menu</p>
+    </header>
+
+    <main class="menu">
+        <h2>Menu Section</h2>
+
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Avocado Toast</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Eggs Benedict</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Grilled Salmon</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Chicken Caesar Salad</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Penne Alfredo</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Mushroom Risotto</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Club Sandwich</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Margherita Pizza</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Tiramisu</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Cappuccino</span></label>
+
+        <div class="bottom">
+           <a href="Dine And Donate Website.html"> <button>Select and Back</button></a>
+         
+        </div>
+    </main>
+
+    <footer>
+        © 2026 The Peninsula Restaurant
+    </footer>
+
+
+
+
+
+
+
+<header>
+        <h1>Rosewood Hotel</h1>
+        <p>Restaurant Menu</p>
+    </header>
+
+    <main class="menu">
+        <h2>Menu Section</h2>
+
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Truffle Mushroom Pasta</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Grilled Lamb Chops</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Herb Roasted Chicken</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Burrata Salad</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Seafood Risotto</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Grilled Salmon</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Tomato Basil Soup</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Grilled Asparagus</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Chocolate Lava Cake</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Vanilla Panna Cotta</span></label>
+
+        <div class="bottom">
+           <a href="Dine And Donate Website.html"> <button>Select and Back</button></a>
+         
+        </div>
+    </main>
+
+    <footer>
+        © 2026 Rosewood Hotel Restaurant
+    </footer>
+
+
+
+
+
+
+
+<header>
+        <h1>Marriott</h1>
+        <p>Restaurant Menu</p>
+    </header>
+
+    <main class="menu">
+        <h2>Menu Section</h2>
+
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Chicken Tikka Masala</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Paneer Butter Masala</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Veg Biryani</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Chicken Biryani</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Dal Makhani</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Kadai Paneer</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Tandoori Chicken</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Butter Naan</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Chicken Seekh Kebab</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Masala Chaas</span></label>
+
+        <div class="bottom">
+           <a href="Dine And Donate Website.html"> <button>Select and Back</button></a>
+         
+        </div>
+    </main>
+
+    <footer>
+        © 2026 Marriott Restaurant
+    </footer>
+
+
+
+
+
+
+
+<header>
+        <h1>Punjabi Dhaba</h1>
+        <p>Restaurant Menu</p>
+    </header>
+
+    <main class="menu">
+        <h2>Menu Section</h2>
+
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Amritsari Kulcha</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Chole Bhature</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Sarson Ka Saag</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Makki Di Roti</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Dal Makhani</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Butter Chicken</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Kadai Paneer</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Tandoori Chicken</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Rajma Chawal</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Lassi</span></label>
+
+        <div class="bottom">
+           <a href="Dine And Donate Website.html"> <button>Select and Back</button></a>
+         
+        </div>
+    </main>
+
+    <footer>
+        © 2026 Punjabi Dhaba Restaurant
+    </footer>
+
+
+
+
+
+
+
+<header>
+        <h1>Rajasthani Special</h1>
+        <p>Restaurant Menu</p>
+    </header>
+
+    <main class="menu">
+        <h2>Menu Section</h2>
+
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Dal Baati Churma</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Gatte Ki Sabzi</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Ker Sangri</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Laal Maas</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Bajre Ki Roti</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Panchmel Dal</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Papad Ki Sabzi</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Mirchi Bada</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Ghevar</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Chaas</span></label>
+
+        <div class="bottom">
+           <a href="Dine And Donate Website.html"> <button>Select and Back</button></a>
+         
+        </div>
+    </main>
+
+    <footer>
+        © 2026 Rajasthani Special Restaurant
+    </footer>
+
+
+
+
+
+
+
+<header>
+        <h1>The Famous Spot</h1>
+        <p>Restaurant Menu</p>
+    </header>
+
+    <main class="menu">
+        <h2>Menu Section</h2>
+
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Special Chicken Burger</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Paneer Burger</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Veg Cheese Pizza</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Chicken Pizza</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Chicken Sandwich</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Peri Peri Fries</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Chicken Wings</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Veg Momos</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>White Sauce Pasta</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Cold Coffee</span></label>
+
+        <div class="bottom">
+           <a href="Dine And Donate Website.html"> <button>Select and Back</button></a>
+         
+        </div>
+    </main>
+
+    <footer>
+        © 2026 The Famous Spot Restaurant
+    </footer>
+
+
+
+
+
+
+
+<header>
+        <h1>Bhurji Point</h1>
+        <p>Restaurant Menu</p>
+    </header>
+
+    <main class="menu">
+        <h2>Menu Section</h2>
+
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Egg Bhurji</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Cheese Egg Bhurji</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Masala Omelette</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Cheese Omelette</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Egg Curry</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Boiled Eggs</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Half Fry</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Egg Sandwich</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Egg Paratha</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Bread Omelette</span></label>
+
+        <div class="bottom">
+           <a href="Dine And Donate Website.html"> <button>Select and Back</button></a>
+         
+        </div>
+    </main>
+
+    <footer>
+        © 2026 Bhurji Point Restaurant
+    </footer>
+
+
+
+
+
+
+
+<header>
+        <h1>Maggi Massala Point</h1>
+        <p>Restaurant Menu</p>
+    </header>
+
+    <main class="menu">
+        <h2>Menu Section</h2>
+
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Classic Masala Maggi</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Cheese Maggi</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Veg Maggi</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Schezwan Maggi</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Peri Peri Maggi</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Butter Maggi</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Paneer Maggi</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Egg Maggi</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Tandoori Maggi</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Mayo Maggi</span></label>
+
+        <div class="bottom">
+           <a href="Dine And Donate Website.html"> <button>Select and Back</button></a>
+         
+        </div>
+    </main>
+
+    <footer>
+        © 2026 Maggi Masala Point Restaurant
+    </footer>
+
+
+
+
+
+
+
+<header>
+        <h1>Royal Farm</h1>
+        <p>Restaurant Menu</p>
+    </header>
+
+    <main class="menu">
+        <h2>Menu Section</h2>
+
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Farmhouse Pizza</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Veg Cheese Burger</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Chicken Burger</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Paneer Wrap</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Chicken Wrap</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>French Fries</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Peri Peri Fries</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Grilled Sandwich</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Veg Pasta</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Chicken Pasta</span></label>
+
+        <div class="bottom">
+           <a href="Dine And Donate Website.html"> <button>Select and Back</button></a>
+         
+        </div>
+    </main>
+
+    <footer>
+        © 2026 Royal Farm Restaurant
+    </footer>
+
+
+
+
+
+
+
+<header>
+        <h1>UP Nasta</h1>
+        <p>Restaurant Menu</p>
+    </header>
+
+    <main class="menu">
+        <h2>Menu Section</h2>
+
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Aloo Paratha</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Poori Bhaji</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Kachori Sabzi</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Bedmi Puri</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Samosa</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Jalebi</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Chole Bhature</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Bread Pakora</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Poha</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Masala Chai</span></label>
+
+        <div class="bottom">
+           <a href="Dine And Donate Website.html"> <button>Select and Back</button></a>
+         
+        </div>
+    </main>
+
+    <footer>
+        © 2026 UP Nasta Restaurant
+    </footer>
+
+
+
+
+
+
+
+<header>
+        <h1>Nasta House</h1>
+        <p>Restaurant Menu</p>
+    </header>
+
+    <main class="menu">
+        <h2>Menu Section</h2>
+
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Masala Dosa</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Idli Sambar</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Poha</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Upma</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Aloo Paratha</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Paneer Paratha</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Chole Bhature</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Samosa</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Vada Pav</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Masala Chai</span></label>
+
+        <div class="bottom">
+           <a href="Dine And Donate Website.html"> <button>Select and Back</button></a>
+         
+        </div>
+    </main>
+
+    <footer>
+        © 2026 Nasta House Restaurant
+    </footer>
+
+
+
+
+
+
+
+<header>
+        <h1>Chinese Hub</h1>
+        <p>Restaurant Menu</p>
+    </header>
+
+    <main class="menu">
+        <h2>Menu Section</h2>
+
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Veg Hakka Noodles</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Chicken Hakka Noodles</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Veg Fried Rice</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Chicken Fried Rice</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Chilli Paneer</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Chilli Chicken</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Veg Manchurian</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Spring Rolls</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Hot and Sour Soup</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Schezwan Noodles</span></label>
+
+        <div class="bottom">
+           <a href="Dine And Donate Website.html"> <button>Select and Back</button></a>
+         
+        </div>
+    </main>
+
+    <footer>
+        © 2026 Chinese Hub Restaurant
+    </footer>
+
+
+
+
+
+
+
+<header>
+        <h1>Ace Hotel</h1>
+        <p>Restaurant Menu</p>
+    </header>
+
+    <main class="menu">
+        <h2>Menu Section</h2>
+
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Club Sandwich</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Chicken Burger</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Veg Burger</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Margherita Pizza</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Chicken Pizza</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Alfredo Pasta</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Arrabbiata Pasta</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Caesar Salad</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Fish and Chips</span></label>
+        <label class="item"><input type="checkbox" onchange="updateCount()"><span>Cappuccino</span></label>
+
+        <div class="bottom">
+           <a href="Dine And Donate Website.html"> <button>Select and Back</button></a>
+         
+        </div>
+    </main>
+
+    <footer>
+        © 2026 Ace Hotel Restaurant
+    </footer>
+
+
+
+
+
+
+
+
+
+    </body>
+</html>

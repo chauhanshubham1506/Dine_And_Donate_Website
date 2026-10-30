@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cancellation Page</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 25px;
+            background:
+                radial-gradient(circle at top left, rgba(255, 185, 80, 0.22), transparent 35%),
+                radial-gradient(circle at bottom right, rgba(255, 99, 71, 0.18), transparent 35%),
+                linear-gradient(135deg, #fff8ef, #fff);
+            color: #252525;
+        }
+
+        .confirmation-card {
+            width: min(650px, 100%);
+            text-align: center;
+            background: rgba(255, 255, 255, 0.95);
+            border: 1px solid rgba(0, 0, 0, 0.06);
+            border-radius: 28px;
+            padding: 42px 35px;
+            box-shadow: 0 20px 55px rgba(75, 45, 20, 0.14);
+            animation: cardIn 0.7s ease;
+        }
+
+        .success-icon {
+            width: 82px;
+            height: 82px;
+            margin: 0 auto 22px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: green;
+            color: white;
+            font-size: 42px;
+            font-weight: 700;
+            box-shadow: 0 12px 28px rgba(255, 104, 0, 0.28);
+            animation: pop 0.7s ease 0.2s both;
+        }
+
+        .brand {
+            font-size: 15px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #f26b21;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: clamp(30px, 6vw, 44px);
+            line-height: 1.1;
+            margin-bottom: 14px;
+            color: #222;
+        }
+
+        .message {
+            max-width: 470px;
+            margin: 0 auto 28px;
+            color: #666;
+            font-size: 16px;
+            line-height: 1.7;
+        }
+
+        .receipt-wrapper {
+            margin: 25px auto 30px;
+            padding: 10px;
+            border-radius: 18px;
+            background: #fff;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+        }
+
+        .receipt-wrapper img {
+            display: block;
+            width: 100%;
+            max-height: 390px;
+            object-fit: contain;
+            border-radius: 12px;
+        }
+
+        .info-box {
+            margin: 0 auto 28px;
+            padding: 15px 18px;
+            border-radius: 14px;
+            background: #fff7ed;
+            color: #7a4a20;
+            font-size: 14px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+        }
+
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 9px;
+            min-width: 190px;
+            padding: 14px 25px;
+            border: none;
+            border-radius: 12px;
+            background: green;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            box-shadow: 0 10px 22px rgba(255, 94, 0, 0.24);
+            transition: 0.25s ease;
+        }
+
+        .back-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 14px 28px rgba(255, 94, 0, 0.32);
+        }
+
+        .back-btn:active {
+            transform: translateY(0);
+        }
+
+        .footer {
+            margin-top: 25px;
+            font-size: 12px;
+            color: #999;
+        }
+
+        @keyframes cardIn {
+            from {
+                opacity: 0;
+                transform: translateY(25px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pop {
+            0% {
+                opacity: 0;
+                transform: scale(0.5);
+            }
+            70% {
+                transform: scale(1.08);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 15px;
+            }
+
+            .confirmation-card {
+                padding: 32px 20px;
+                border-radius: 22px;
+            }
+
+            .success-icon {
+                width: 70px;
+                height: 70px;
+                font-size: 34px;
+            }
+
+            .message {
+                font-size: 15px;
+            }
+
+            .receipt-wrapper img {
+                max-height: 300px;
+            }
+
+            .back-btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="confirmation-card">
+
+        <div class="success-icon">✓</div>
+
+        <div class="brand">Dine & Donate</div>
+
+        <h1>Order Cancelled!</h1>
+
+        <p class="message">
+            Your booking has been successfully cancelled.
+            We appreciate your support and contribution to our cause.
+        </p>
+
+        <div class="receipt-wrapper">
+            <img
+                src="Logo.png"
+                alt="Logo"
+            >
+        </div>
+
+        <div class="info-box">
+            ✓ Your order cancelled. Please keep this receipt for your records.
+        </div>
+
+        <div class="buttons">
+            <a href="Dine And Donate Website.html" class="back-btn">
+                ← Back to Website and Refresh
+            </a>
+        </div>
+
+        <div class="footer">
+            © 2026 Dine & Donate • Making every meal meaningful.
+        </div>
+
+    </main>
+
+</body>
+</html>
